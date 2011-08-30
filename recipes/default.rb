@@ -11,6 +11,8 @@ end
 
 include_recipe_relative 'debian'
 
+ppa 'sometimesfood/hub'
+
 node.dev_essentials.default_packages.each do |p|
   package p
 end
