@@ -9,6 +9,8 @@ class Chef::Recipe
   include DevEssentials
 end
 
-node.dev_essentials.default_packages.each do | p |
+include_recipe_relative 'debian'
+
+node.dev_essentials.default_packages.each do |p|
   package p
 end
