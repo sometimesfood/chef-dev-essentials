@@ -12,6 +12,10 @@ debian_packages = ['devscripts',
                    'git-buildpackage',
                    'debian-el']
 
+if node['platform'] == 'ubuntu'
+  debian_packages << 'ubuntu-dev-tools'
+end
+
 debian_packages.each do |p|
   package p
 end
