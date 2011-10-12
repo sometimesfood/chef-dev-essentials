@@ -7,7 +7,7 @@ debian_packages = ['devscripts',
                    'pbuilder',
                    'dh-make',
                    'lintian',
-                   'libcrypt-ssleay-perl', # useful for uscan and GitHub
+                   'libio-socket-ssl-perl', # useful for uscan and GitHub
                    'pristine-tar',
                    'git-buildpackage',
                    'debian-el']
