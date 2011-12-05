@@ -10,6 +10,7 @@ class Chef::Recipe
 end
 
 include_recipe_relative 'debian'
+include_recipe_relative 'ruby'
 
 ppa 'sometimesfood/hub'
 
