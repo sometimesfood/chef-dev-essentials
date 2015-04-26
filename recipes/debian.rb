@@ -10,7 +10,8 @@ debian_packages = ['devscripts',
                    'libio-socket-ssl-perl', # useful for uscan and GitHub
                    'pristine-tar',
                    'git-buildpackage',
-                   'debian-el']
+                   'debian-el'
+                   'quilt']
 
 if node['platform'] == 'ubuntu'
   debian_packages << 'ubuntu-dev-tools'
