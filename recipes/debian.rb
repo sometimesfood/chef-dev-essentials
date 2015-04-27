@@ -18,5 +18,5 @@ if node['platform'] == 'ubuntu'
 end
 
 debian_packages.each do |p|
-  package p
+  DevEssentials.dont_clone_resource(self, :package, p)
 end
